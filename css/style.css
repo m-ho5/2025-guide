@@ -1,0 +1,620 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Zen+Old+Mincho:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Noto Sans JP";
+    color: #4e454a;
+}
+
+/* デスクトップ */
+@media screen and (min-width: 600px) and (max-width: 3000px) {
+
+.zen-old-mincho-regular {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+    font-family: "Inconsolata", monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 2% 5% 0 5%;
+}
+
+.sitet-title {
+	font-family: Playfair Display;
+}
+
+.list-button {
+	position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 7% 0% 0% 88%;
+    font-family: Playfair Display;
+    transform: translate(-50%, -50%);
+}
+
+.list {
+  position: relative;
+  display: flex;
+  width: 110px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100px / 50px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 50px;
+}
+
+.list:hover:before {
+  content: "Button";
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 200px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.list:hover:after {
+  content: "LIST";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: white;
+}
+
+.list:before {
+  content: "LIST";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.list:after {
+  content: "LIST";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: -90px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+.container {
+    margin: 2% 5% 0% 5%;
+}
+
+.first-img{
+    width: 100%;
+    align-items: center;
+}
+
+.first-img img {
+    width: 100%;
+    align-items: center;
+    height: auto;
+}
+
+.kiso {
+    width: 100%;
+    align-items: center;
+	justify-content: center;
+}
+
+.kiso-img {
+    margin: 0% 40% 0% 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.kiso-img img {
+    max-width: 100%;
+    min-width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.kiso-title {
+    font-family: "Zen Old Mincho", serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 144px;
+}
+
+.kiso-txt {
+    text-align: center;
+    margin: 144px;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 60px;
+}
+
+
+.select {
+    width: 100%;
+    align-items: center;
+}
+
+.select-title {
+    font-family: "Zen Old Mincho", serif;
+    text-align: center;
+    margin: 244px 144px 144px 144px;
+}
+
+.select-txt {
+    text-align: center;
+    line-height: 60px;
+    margin: 144px;
+}
+
+.note-1 {
+    width: 100%;
+    /* margin: 2% 2% 2% 2%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.note-2 {
+    width: 100%;
+    /* margin: 2% 2% 2% 2%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.note-img {
+    aspect-ratio: 1 / 1;
+    margin: 20px;
+}
+
+.note-img img {
+    width: 208px;
+    height: 208px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.note-img :hover {
+    filter: brightness(0.4);
+}
+
+.note-txt {
+    margin: 0px 20px 20px;
+}
+
+.howto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.howto-title {
+    text-align: center;
+	margin: 144px 144px 60px 144px;
+}
+
+.howto-list {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.howto-list2 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.howto-list3 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.howto-title {
+    font-family: "Zen Old Mincho", serif;
+}
+
+.howto-img img {
+    max-width: 60%;
+    align-items: center;
+    margin: 124px;
+    box-shadow: 0px 0px 5px 5px #EFEFEF;
+}
+
+.subtitle01 {
+    width: 100%;
+    margin: 0px 0px 161px;
+}
+
+.subtitle02 {
+    width: 100%;
+    margin: 0px 0px 121px;
+}
+
+.subtitle03 {
+    width: 100%;
+    margin: 0px 0px 121px;
+}
+
+.howto-title {
+    font-family: "Zen Old Mincho", serif;
+}
+
+.howto-txt {
+    font-size: 15px;
+    font-style: normal;
+    line-height: 40px;
+    margin: 124px 164px 0px;
+}
+
+.last-title {
+    font-family: "Zen Old Mincho", serif;
+    text-align: center;
+}
+
+.last {
+	margin: 144px;
+}
+
+.last-txt {
+    text-align: center;
+    line-height: 60px;
+    margin: 144px;
+}
+
+}
+
+
+
+
+
+
+
+/* すまほ */
+@media screen and (max-width: 599px) {
+
+.zen-old-mincho-regular {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+    font-family: "Inconsolata", monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 2% 5% 0 5%;
+}
+
+.sitet-title {
+	font-family: Playfair Display;
+}
+
+.list-button {
+	position: absolute;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    margin: 27% 0% 0% 82%;
+    font-family: Playfair Display;
+    transform: translate(-50%, -50%);
+}
+
+.list {
+  position: relative;
+  display: flex;
+  width: 70px;
+  line-height: 32px;
+  /* text-align: center; */
+  border-radius: 100px / 50px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 50px;
+}
+
+.list:hover:before {
+  content: "Button";
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 200px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.list:hover:after {
+  content: "LIST";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: white;
+}
+
+.list:before {
+  content: "LIST";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.list:after {
+  content: "LIST";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: -90px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+.container {
+    margin: 2% 5% 0% 5%;
+}
+
+.first-img{
+    width: 100%;
+    align-items: center;
+}
+
+.first-img img {
+    width: 100%;
+    align-items: center;
+    height: auto;
+}
+
+.kiso {
+    width: 100%;
+    align-items: center;
+	justify-content: center;
+}
+
+.kiso-img {
+    margin: 0% 20% 0% 20%;
+}
+
+.kiso-img img {
+    max-width: 100%;
+    align-items: center;
+}
+
+.kiso-title {
+    font-family: "Zen Old Mincho", serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 144px 50px 144px 50px;
+}
+
+.kiso-txt {
+    text-align: center;
+    margin: 144px 60px 144px 60px;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 60px;
+}
+
+
+.select {
+    width: 100%;
+    align-items: center;
+}
+
+.select-title {
+    font-family: "Zen Old Mincho", serif;
+    text-align: center;
+    margin: 244px 50px 144px 50px;
+}
+
+.select-txt {
+    text-align: center;
+    line-height: 60px;
+    margin: 144px 60px 144px 60px;
+}
+
+.note {
+    display: flex;
+}
+
+.note-1 {
+    width: 90%;
+    /* margin: 2% 2% 2% 2%; */
+    align-items: center;
+    justify-content: center;
+}
+
+.note-2 {
+    width: 90%;
+    /* margin: 2% 2% 2% 2%; */
+    align-items: center;
+    justify-content: center;
+}
+
+.note-img {
+    aspect-ratio: 1 / 1;
+    margin: 20px;
+}
+
+.note-img img {
+    width: 160px;
+    height: 160px;
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.note-img :hover {
+    filter: brightness(0.4);
+}
+
+.note-txt {
+    margin: 0px 20px 20px;
+}
+
+.howto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.howto-title {
+    font-family: "Zen Old Mincho", serif;
+    text-align: center;
+	margin: 144px 60px 80px 60px;
+}
+
+.howto-list {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.howto-list2 {
+    width: 100%;
+    
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.howto-list3 {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.howto-img img {
+    max-width: 60%;
+    align-items: center;
+    margin: 20%;
+    box-shadow: 0px 0px 5px 5px #EFEFEF;
+}
+
+.subtitle01 {
+    width: 100%;
+    margin: 0px 0px 161px;
+}
+
+.subtitle02 {
+    width: 100%;
+    margin: 0px 0px 121px;
+}
+
+.subtitle03 {
+    width: 100%;
+    margin: 0px 0px 121px;
+}
+
+.howto-txt {
+    font-size: 15px;
+    font-style: normal;
+    line-height: 40px;
+    margin: 80px;
+}
+
+.last-title {
+    text-align: center;
+    margin: 0px 0px 144px 0px;
+}
+
+.last {
+    font-family: "Zen Old Mincho", serif;
+	margin: 80px;
+}
+
+.last-txt {
+    text-align: center;
+    line-height: 60px;
+    margin: 0px;
+}
+
+}
